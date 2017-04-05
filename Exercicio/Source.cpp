@@ -30,12 +30,15 @@ int main()
 		for (int i = 0; i < tamanho; i++)
 		{
 			modKey = key % tamanho;
-			vet2[i] = modKey;
-			if (vet[i] == vet2[i])
+
+			if (modKey % modKey == 1 && modKey % 1 == modKey)
 			{
-				vet3[i] += 1;
+				vet2[i] = modKey;
+				if (vet[i] == vet2[i])
+				{
+					vet3[i] += 1;
+				}
 			}
-			
 			key += 1;
 		 }
 
