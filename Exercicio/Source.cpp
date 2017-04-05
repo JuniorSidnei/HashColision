@@ -31,14 +31,14 @@ int main()
 		{
 			modKey = key % tamanho;
 
-			if (modKey % modKey == 1 && modKey % 1 == modKey)
-			{
+			//if (modKey % modKey == 1 && modKey % 1 == modKey)
+			//{
 				vet2[i] = modKey;
 				if (vet[i] == vet2[i])
 				{
 					vet3[i] += 1;
 				}
-			}
+			//}
 			key += 1;
 		 }
 
